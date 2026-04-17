@@ -1,0 +1,27 @@
+Name: SHASHIVARDHAN CHINTHA KUNTA
+ID: 16856974
+
+Test Case 1: Weak Password Handling
+| Input                                                | Expected Output                                                                | Result |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------ | ------ |
+| Username: `SHASHIVARDHAN123`<br>Password: `short123` | Weak password rejected and user prompted again until valid password is entered | Pass   |
+
+
+Test Case 2: Successful Registration
+| Input                                            | Expected Output                                                | Result |
+| ------------------------------------------------ | -------------------------------------------------------------- | ------ |
+| Username: `user124`<br>Password: `Secure@123456` | Registration successful for SHASHIVARDHAN CHINTHA KUNTA system | Pass   |
+
+
+Test Case 3: Successful Login
+
+| Input                                                     | Expected Output  | Result |
+| --------------------------------------------------------- | ---------------- | ------ |
+| Username: `SHASHIVARDHAN123`<br>Password: `Secure@123456` | Login successful | Pass   |
+
+
+Test Case 4: Secure Storage Verification
+
+| Scenario                | Expected Output                                                   | Result |
+| ----------------------- | ----------------------------------------------------------------- | ------ |
+| Check `users.json` file | Password stored as hashed value with unique salt (not plain text) | Pass   |

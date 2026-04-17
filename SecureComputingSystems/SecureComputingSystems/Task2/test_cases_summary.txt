@@ -1,0 +1,27 @@
+Name: SHASHIVARDHAN CHINTHA KUNTA
+ID: 16856974
+
+Test Case 1: Log File Detection
+
+| Input                              | Expected Output                                                    | Result |
+| ---------------------------------- | ------------------------------------------------------------------ | ------ |
+| File: `auth.log`<br>Threshold: `3` | IP addresses with ≥3 failed attempts detected and exported to JSON | Pass   |
+
+Test Case 2: CSV File Detection
+
+| Input                              | Expected Output                                                     | Result |
+| ---------------------------------- | ------------------------------------------------------------------- | ------ |
+| File: `data.csv`<br>Threshold: `3` | Repeated IP addresses correctly detected from CSV and saved to JSON | Pass   |
+
+
+Test Case 3: Dynamic Threshold Adjustment
+
+| Input                                     | Expected Output                                                         | Result |
+| ----------------------------------------- | ----------------------------------------------------------------------- | ------ |
+| File: `data.csv`<br>Threshold: `3` vs `4` | Lower threshold detects more IPs; higher threshold reduces detected IPs | Pass   |
+
+Test Case 4: Error Handling
+
+| Input                                 | Expected Output                                    | Result |
+| ------------------------------------- | -------------------------------------------------- | ------ |
+| File: `invalid.log`<br>Threshold: `3` | Error message displayed and program does not crash | Pass   |

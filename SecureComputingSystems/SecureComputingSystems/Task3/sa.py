@@ -1,0 +1,1 @@
+print(calculate_sha256("test_samples/malware.txt"))

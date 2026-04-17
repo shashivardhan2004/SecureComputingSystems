@@ -1,0 +1,9 @@
+{
+    "input_file": "data.csv",
+    "threshold": 4,
+    "total_malicious_ips": 2,
+    "malicious_ips": [
+        "192.168.1.10",
+        "203.0.113.50"
+    ]
+}

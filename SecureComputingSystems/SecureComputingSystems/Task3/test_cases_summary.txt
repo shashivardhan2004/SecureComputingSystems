@@ -1,0 +1,27 @@
+Name: SHASHIVARDHAN CHINTHA KUNTA
+ID: 16856974
+
+Test Case 1: Safe File Hashing
+| Input            | Expected Output                                    | Result |
+| ---------------- | -------------------------------------------------- | ------ |
+| File: `safe.txt` | SHA-256 hash generated successfully without errors | Pass   |
+
+
+Test Case 2: Malware Detection & Quarantine
+
+| Input                            | Expected Output                                         | Result |
+| -------------------------------- | ------------------------------------------------------- | ------ |
+| File: `malware.txt` (known hash) | Malicious file detected and moved to `QUARANTINE_VAULT` | Pass   |
+
+
+Test Case 3: EXIF Metadata Extraction
+
+| Input             | Expected Output                                                                   | Result |
+| ----------------- | --------------------------------------------------------------------------------- | ------ |
+| File: `image.png` | EXIF metadata checked; displays GPS data if available or “No EXIF metadata found” | Pass   |
+
+Test Case 4: Directory Safety Check
+
+| Input                          | Expected Output                                    | Result |
+| ------------------------------ | -------------------------------------------------- | ------ |
+| Directory outside allowed path | Access denied message displayed and scan prevented | Pass   |
